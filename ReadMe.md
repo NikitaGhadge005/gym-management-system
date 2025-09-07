@@ -54,6 +54,8 @@ gym-management-system/
     │        └── gitignore
     ├── src                   # Express.js Backend
     │    ├── index.js               # Entry point
+    │    ├── constats.js            # constant Variables
+    │    ├── app.js                 # configration
     │    ├── config/
     │    │   └── db.js               # MongoDB connection
     │    │
@@ -113,5 +115,4 @@ gym-management-system/
 
 # ER Diagram for models 
 
-![ER Diagram for models ](Image/ER-diagram.png)
-
+![ER Diagram for models](image.png)
