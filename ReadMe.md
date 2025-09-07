@@ -55,7 +55,6 @@ gym-management-system/
     ├── src                   # Express.js Backend
     │    ├── index.js               # Entry point
     │    ├── constats.js            # constant Variables
-    │    ├── app.js                 # configration
     │    ├── config/
     │    │   └── db.js               # MongoDB connection
     │    │
@@ -112,7 +111,25 @@ gym-management-system/
 * cors
 * nodemon
 
-
 # ER Diagram for models 
 
 ![ER Diagram for models](image.png)
+
+
+# API Endpoints
+
+| Entity        | Endpoint               | Method   | Description             |
+| ------------- | ---------------------- | -------- | ----------------------- |
+| Auth          | `/api/auth/login`      | POST     | Login admin/member      |
+|               | `/api/auth/register`   | POST     | Register user           |
+| Members       | `/api/members`         | GET      | Get all members         |
+|               | `/api/members/:id`     | GET      | Get member by ID        |
+|               | `/api/members`         | POST     | Add member              |
+|               | `/api/members/:id`     | PUT      | Update member           |
+|               | `/api/members/:id`     | DELETE   | Delete member           |
+| Packages      | `/api/packages`        | GET/POST | Membership plans CRUD   |
+| Billing       | `/api/bills`           | POST     | Create bill             |
+|               | `/api/bills/:memberId` | GET      | View bills for a member |
+| Notifications | `/api/notifications`   | POST     | Send reminder           |
+| Store         | `/api/store`           | GET/POST | Store items CRUD        |
+| Diet          | `/api/diet`            | GET/POST | Diet plans CRUD         |

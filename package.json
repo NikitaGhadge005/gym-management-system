@@ -4,10 +4,10 @@
   "description": "This is ths backend set of gym-management-system",
   "license": "ISC",
   "author": "Nikita Ghadge",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-     "dev": "nodemon -r dotenv/config src/index.js"
+    "dev": "nodemon -r dotenv/config src/index.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
